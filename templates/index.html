@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Specter-Paulson Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">The Specter-Paulson Project</h1>
+        <p class="lead">Welcome to the Specter-Paulson Project. This is where Harvey Specter's legal acumen and Donna Paulson's administrative prowess come together to create a powerhouse of efficiency.</p>
+        <h2 class="mt-5">Drafts</h2>
+        <ul class="list-group">
+            {% for draft in drafts %}
+            <li class="list-group-item">{{ draft }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
